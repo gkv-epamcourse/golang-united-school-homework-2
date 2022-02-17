@@ -8,7 +8,7 @@ const (
 	SidesCircle intCustomType = iota
 	_
 	_
-	SidesTriagle
+	SidesTriangle
 	SidesSquare
 )
 
@@ -25,7 +25,7 @@ func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	switch sidesNum {
 	case SidesCircle:
 		s = math.Pi * sideLen * sideLen
-	case SidesTriagle:
+	case SidesTriangle:
 		s = sideLen * sideLen * math.Sqrt(3) / 4
 	case SidesSquare:
 		s = sideLen * sideLen
